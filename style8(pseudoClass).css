@@ -1,0 +1,14 @@
+button:hover{
+background-color: red;
+}
+
+button:active{
+background-color: green;
+}
+
+/* bắt đầu bằng dấu : 
+Dùng để thêm hiệu ứng động, trạng thái đặc biệt mà không cần chỉnh HTML
+:hover   -> khi người dùng di chuột vào ptu
+:active   ->Khi ptử đang đc bấm giữ chuột
+:nth-child
+*/

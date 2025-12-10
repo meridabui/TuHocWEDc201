@@ -1,0 +1,28 @@
+body {
+    /*background-color: #f0f8ff;
+    */
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    background-color: aquamarine;
+    color: #444;
+    font-size: 18px;
+}
+
+.le{
+    background-attachment: aqua; color: red;
+}
+.chan{
+    background-color: black; color: yellow;
+}
+
+#test{
+    background-color: black; color:pink;
+}

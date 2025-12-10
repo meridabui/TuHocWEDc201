@@ -1,0 +1,16 @@
+@media all and (max-width:768px){
+    h1{
+        color:red;
+    }
+}
+
+/*linh hoạt theo kích thước màn hình,
+-> giúp hiển thị đẹp trên mọi thiết bị
+
+Thiết bị	 Kích thước	      Media Query mẫu
+Mobile	     ≤ 480px	         @media (max-width: 480px)
+Tablet đứng	  481px – 768px     @media (max-width: 768px)
+Tablet ngang  769px – 1024px	@media (max-width: 1024px)
+Desktop nhỏ	  1025px – 1200px	@media (max-width: 1200px)
+Desktop lớn	   >1200px	       ko cần media query nếu mặc định rồi
+*/

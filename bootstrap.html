@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleBootstrap.css">
+</head>
+
+<body>
+<!--color-->
+<p class="text-primary bg-success"> Màu primary</p>
+<!--TAble-->
+<table class="table table-primary table-hover" >  khi có class="table " trong bootstrap sẽ tự đông căn thành bảng
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Tên</th>
+      <th class="table-danger">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nguyễn Văn A</td>
+      <td>a@example.com</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Trần Thị B</td>
+      <td>b@example.com</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- form đăng nhập -->
+
+<form>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+    <div class="form-text">We'll never share your email.</div>
+  </div>
+
+  <div class="mb-3">
+    <!-- password -->
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-outlinne-primary">Login</button>
+</form>
+
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="remember">
+  <label class="form-check-label" for="remember">
+    Remember me
+  </label>
+
+  <button class="btn btn-outline-primary">click me</button>
+</div>
+
+<!-- A lert : hiển thị thông báo -->
+<div class="container">
+    <div class="alert alert-success m-2 alert-dismissible" role="alert">
+        bạn đã thành công
+<button class="btn-close" aria-label="close"
+        data-bs-dismiss="alert"></button>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row row-cols-4 gx-2 gy-2">
+            <div class="col -md -1 col-3"> <!--if màn hình > mdlà 1 còn nhỏ hơn thì gtri khá-->
+                <div class="box"></div>
+
+            </div>
+
+            <div class="col-3">
+                <div class="box"></div>
+            </div>
+
+            <div class="col-5">
+                <div class="box"></div>
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col -md -1 col-3"> <!--if màn hình > mdlà 1 còn nhỏ hơn thì gtri khá-->
+                <div class="box"></div>
+
+            </div>
+
+            <div class="col-3">
+                <div class="box"></div>
+            </div>
+
+            <div class="col-5">
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- CARD: hiển thị gọn gàng trong 1khung -->
+     <!-- đây là chèn chữ trong ảnh  thì bỏ phần bottom hay top ở ảnh đi và 
+      thêm và chỗ card-body chữ card-img-overlay -->
+     <div class="container">
+      <div class="card" style="width: 300px;">
+          <img src="_Tulip_ 🌷.jpg" alt="thu nhe" class="card-img">
+      <div class="card-body card-img-overlay">
+        <div class="card-title" style="color:brown;">Card tiltle is here      
+      <div class="card-text" style="color: black;"> card text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati atque adipisci corporis aut ratione quae. Ducimus saepe iure ipsam cupiditate ab blanditiis maxime ut quidem, a reiciendis tempora fuga rem?
+      </div>
+      </div>  
+  </div>
+  </div>
+  
+      
+<div class="card">
+  <h1 class="card-header">hello</h1>
+  <div class="card-body">
+    <h4 class="card-title">Title</h4>
+    <h6 class="card-subtitle">Subtitle</h6>
+  </div>
+  <img src="_Tulip_ 🌷.jpg" alt="" />
+  <div class="card-body">
+    <p class="card-text">Text</p>
+    <a href="#" class="card-link">Link 1</a>
+    <a href="#" class="card-link">Link 2</a>
+  </div>
+  <h1 class="card-footer">bye!!</h1>
+</div>
+
+</div>
+<!-- ở đây ta có 2 thẻ
+ nếu muốn gộp 2 thẻ này trên 1 khuôn ngang thì dùng
+ <div class="card-group">  </div>
+ -->
+ 
+
+
+ <!-- modal -->
+  bắt đầu học về modal
+  <div class="container">
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+      Open</button>
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">My modal </div>
+          <div class="modal-body"> vd như sd modal để hiển thị thông báo: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas officia quaerat maiores doloribus omnis eius explicabo quasi reprehenderit maxime eaque corrupti enim nisi fugiat nobis repudiandae, atque perferendis molestias aperiam.</div>
+          <div class="modal-footer">footer</div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!--  Học về Modal theo gpt :Nút bấm để kích hoạt modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Mở Modal
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">   <!-- Khung căn giữa modal trong cửa sổ. -->
+    <div class="modal-content">
+
+      <!-- Header của modal -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tiêu đề Modal</h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button> -->
+      <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+      </div>
+
+      <!-- Body của modal -->
+      <div class="modal-body">
+        Nội dung chính ở đây (text, form, ảnh, v.v.)
+      </div>
+
+      <!-- Footer của modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+Học về nvarbar
+<div class="navbar  navbar-expand-lg bg-secondary text-white">
+<a href="" class="navbar-brand text-white">logo</a>
+ 
+<ul class="navbar-nav">
+<li class="navbar-item" >
+  <a href="" class="nav-link-active">Home</a>
+</li>
+
+<li class="navbar-item" >
+  <a href="" class="nav-link">Store</a>
+</li>
+</ul>
+
+</div>
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Logo hoặc tên website -->
+    <a class="navbar-brand" href="#">MyWebsite</a>
+
+    <!-- Nút toggle khi thu nhỏ trên mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nội dung navbar (menu) -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Liên hệ</a>
+        </li>
+      </ul>
+
+      <!-- Form tìm kiếm hoặc nút đăng nhập bên phải -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Tìm kiếm">
+        <button class="btn btn-outline-success" type="submit">Tìm</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+</body>
+
+</html>
+
+<!-- 
+1. container quan trọng nhất để tạo bố cục (layout). 
+Nó giống như “khung chính” để căn giữa
+<div class="container">  -> giúp nd ở chính giữa màn hình(trừ container-fluid)
+</div>
+
+| Loại           | Cú pháp                              | Đặc điểm                                                      |
+| -------------- | ------------------------------------ | ------------------------------------------------------------- |
+| Cố định        | `.container`                         | Giới hạn chiều rộng theo từng màn hình (`sm`, `md`, `lg`,...) |
+| Toàn màn hình  | `.container-fluid`                   | Rộng 100% mọi lúc                                             |
+| Tùy kích thước | `.container-sm`, `.container-md`,... | Cố định nhưng theo breakpoint cụ thể                          |
+
+-->
+
+<!-- 2. coloumn
+Bootstrap dùng lưới 12 cột (grid system) để chia bố cục trang web.
+Bạn sẽ dùng các lớp như col-4, col-6, col-md-3,... để chia các hàng (rows) thành cột (columns) theo tỷ lệ 12.
+| Kích thước màn hình | Lớp Bootstrap |
+| ------------------- | ------------- |
+| Rất nhỏ (<576px) | `col-` | 
+| Nhỏ (≥576px) | `col-sm-` | 
+| Vừa (≥768px) | `col-md-` | 
+| Lớn (≥992px) | `col-lg-` | |
+Rất lớn (≥1200px) | `col-xl-` |
+ | Siêu lớn (≥1400px) | `col-xxl-` |
+  <div class="row">
+    <div class="col-12 col-md-6">Bên trái</div>
+    <div class="col-12 col-md-6">Bên phải</div>
+    </div>
+    Khi màn hình nhỏ: mỗi cột chiếm toàn bộ chiều ngang (12/12).
+    Khi màn hình vừa trở lên (≥768px): chia đôi (6/12 mỗi bên). -->
+
+    <!-- 3.row
+ row PHẢI nằm trong container (hoặc container-fluid)
+ col- PHẢI nằm trong row
+ <div class="container">
+    <div class="row">
+  <div class="col-4">Chiếm 4 phần</div>
+  <div class="col-8">Chiếm 8 phần</div>
+</div>
+</div>
+Nếu vượt quá 12 cột, Bootstrap sẽ tựu động đẩy xuống
+khoảng cách giữa các cột là Gutter(g)
+<div class="row g-0">     Không có khoảng cách
+<div class="row g-3">       Gutter 3
+<div class="row gx-3 gy-1"> theo chiều ngang(x), dọc(y) -->
+
+
+
+<!-- 4. MÀU
+text-  :dùng để tô màu chữ
+<p class="text-primary">Chữ màu xanh</p>
+<p class="text-danger">Chữ màu đỏ</p>
+<p class="text-muted">Chữ xám nhạt</p>
+bg-.... để tô màu nền
+<div class="bg-primary text-white p-3">Nền xanh, chữ trắng</div>
+<div class="bg-success text-white p-3">Thành công</div>
+<div class="bg-danger text-white p-3">Lỗi!</div> -->
+
+
+<!-- 5. FORMMM 
+ | Class                | Mục đích                                             |
+| -------------------- | ---------------------------------------------------- |
+| `form-control`       | Dùng cho `<input>`, `<textarea>` để có giao diện đẹp |
+| `form-label`         | Dùng cho `<label>`                                   |
+| `form-check`         | Dùng cho checkbox và radio                           |
+| `form-select`        | Dùng cho `<select>` dropdown                         |
+| `form-text`          | Dùng cho mô tả dưới ô nhập                           |
+| `form-group` *(BS4)* | Gom nhóm lại (BS5 dùng `mb-3` hoặc `row` thay thế)   |
+| `mb-3`, `mb-4`, v.v. | Tạo khoảng cách dưới mỗi nhóm input                  |
+| `row`, `col`         | Sử dụng layout dạng lưới (grid) trong form           |
+
+-->
+
+<!-- 6. CARD
+dùng để hiển thị nội dung gọn gàng trong một khung (box). 
+| Thành phần      | Vai trò                   |
+| --------------- | ------------------------- |
+| `.card`         | Khung chính chứa nội dung |
+| `.card-img-top` | Ảnh nằm phía trên card    |
+| `.card-body`    | Vùng chứa nội dung        |
+| `.card-title`   | Tiêu đề                   |
+| `.card-text`    | Nội dung mô tả            |
+| `.btn`          | Nút bấm tương tác         |
+ 
+Bạn có thể thêm các lớp như:
+bg-primary (xanh)
+bg-danger (đỏ)
+bg-success (xanh lá)
+bg-dark (đen)
+bg-light (xám sáng)
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card màu đỏ</h5>
+    <p class="card-text">Card này có nền đỏ và chữ trắng.</p>
+  </div>
+</div>
+-->
+
+<!-- 7. Modal 
+ modal là hộp thoại (popup) được sử dụng để hiển thị 
+ thông tin, cảnh báo, form.. mà ko cần chuyển trang. 
+ Nó xuất hiện ở giữa màn hình và che phần nền p.sau.
+
+| Thành phần       | Vai trò                                         |
+| ---------------- | ----------------------------------------------- |
+| `.modal`         | Thẻ cha của modal                               |
+| `.modal-dialog`  | Container căn giữa modal                        |
+| `.modal-content` | Nội dung của modal                              |
+| `.modal-header`  | Phần đầu (thường chứa tiêu đề và nút đóng)      |
+| `.modal-body`    | Phần thân modal                                 |
+| `.modal-footer`  | Phần chân modal (thường chứa nút đóng hoặc lưu) |
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Mở Modal
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      1.Header của modal 
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tiêu đề Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+
+      2.Body của modal
+      <div class="modal-body">
+        Nội dung chính ở đây (text, form, ảnh, v.v.)
+      </div>
+
+     3. Footer của modal 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+-->
+
+
+<!-- 8. Navbar thường sẽ ko nằm trong container
+ một thanh chứa logo, link, menu, thg ở trên cùng
+giúp người dùng điều hướng giữa các trang.
+| Thành phần              | Giải thích                                          |
+| ----------------------- | --------------------------------------------------- |
+| `navbar`                | Lớp chính của thanh điều hướng                      |
+| `navbar-expand-lg`      | Mở rộng full navbar khi màn hình lớn (`lg` trở lên) |
+| `navbar-light bg-light` | Giao diện sáng                                      |
+| `navbar-brand`          | Logo hoặc tiêu đề                                   |
+| `navbar-toggler`        | Nút để mở menu khi ở thiết bị nhỏ                   |
+| `navbar-nav`            | Danh sách menu                                      |
+| `nav-item` & `nav-link` | Mỗi liên kết trong menu                             |
+| `form` & `input`        | Tạo thanh tìm kiếm hoặc nút bên phải                |
+
+navbar-dark bg-dark – navbar nền tối, chữ sáng
+
+fixed-top – cố định trên đầu khi cuộn
+
+sticky-top – dính trên đầu nhưng không cố định
+
+Thêm dropdown – menu thả xuống
+-->

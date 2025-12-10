@@ -1,0 +1,61 @@
+#box1{
+   border: 5px solid pink; 
+   width: 80px; 
+   height: 80px; 
+   background-color: yellow;
+   position: sticky ;
+   top: 1px;
+
+}
+
+/*BÀI SHADOW
+*/
+h1{
+    text-shadow: ;
+}
+
+
+/*
+ 1. position: static (mặc định)
+➤ Đây là giá trị mặc định nếu bạn không ghi gì.
+➤ Phần tử sẽ xuất hiện theo luồng bình thường của tài liệu HTML.
+➤ Không thể dùng top, left, right, bottom với nó.
+
+    position: static;
+
+ 2. position: relative
+➤ Phần tử vẫn giữ vị trí ban đầu nhưng bạn có thể dịch nó đi bằng top, left, right, bottom.
+➤ Hay dùng để làm gốc (parent) cho phần tử absolute bên trong.
+
+    position: relative;
+    top: 10px;   
+    left: 20px;  
+ 
+3. position: absolute
+➤ Phần tử được gỡ khỏi luồng bình thường của trang.
+➤ Được đặt tuyệt đối so với phần tử cha gần nhất có position: relative hoặc absolute.
+➤ Nếu không có cha định vị, nó sẽ bám vào <body>.
+.child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 4. position: fixed
+➤ Gắn phần tử vào vị trí cố định trong cửa sổ trình duyệt, không bị cuộn theo trang.
+➤ Dùng cho header, menu, nút back-to-top,...
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+✅ 5. position: sticky
+➤ Kết hợp giữa relative và fixed
+➤ Ban đầu cuộn bình thường, nhưng khi chạm một mốc (ví dụ top: 0), nó "dính" lại tại đó.
+➤ Phải có chiều cao đủ để cuộn.
+.header {
+    position: sticky;
+    top: 0;
+}
+
+*/
